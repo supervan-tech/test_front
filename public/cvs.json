@@ -1,3 +1,19 @@
 [
-    {"name": "Benjamin"}
+    {
+        "name": "Benjamin",
+        "experiences": [
+            {
+                "name": "Une boi-boite",
+                "from": 1687039200,
+                "to": 1706655600,
+                "description": "Je suis devenu expert en angles droits."
+            },
+            {
+                "name": "Un cer-cercle",
+                "from": 946681200,
+                "to": 979426800,
+                "description": "J'ai raboté des angles de cubes."
+            }
+        ]
+    }
 ]
