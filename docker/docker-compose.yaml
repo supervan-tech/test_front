@@ -1,0 +1,40 @@
+name: test-supervan
+services:
+
+  frontend:
+    image: mcr.microsoft.com/devcontainers/typescript-node:latest
+    working_dir: "/frontend"
+    command: "npm run start"
+    restart: always
+    volumes:
+      - ../frontend:/frontend
+    ports:
+      - 3001:3000
+
+  backend:
+    image: mcr.microsoft.com/devcontainers/typescript-node:latest
+    working_dir: "/backend"
+    command: "npm run start"
+    restart: always
+    volumes:
+      - ../backend:/backend
+    links:
+      - db
+    ports:
+      - 3002:3000
+
+  db:
+    image: mysql:8.0.31
+    environment:
+      LANG: C.UTF-8
+      MYSQL_DATABASE: supervan
+      MYSQL_USER: supervan
+      MYSQL_PASSWORD: supervan
+      MYSQL_ROOT_PASSWORD: password
+    restart: always
+    volumes:
+      - ./mysql/migrations:/docker-entrypoint-initdb.d
+      - ./mysql/my.cnf:/etc/mysql/my.cnf
+    ports:
+      - 3303:3306
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci --default-time-zone=Europe/Paris

@@ -1,0 +1,32 @@
+{
+  "name": "express-stats",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "tsnd --respawn src/app.ts"
+  },
+  "dependencies": {
+    "@types/chance": "^1.1.6",
+    "chance": "^1.1.12",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "luxon": "^3.5.0",
+    "morgan": "~1.9.1",
+    "mysql2": "^3.12.0"
+  },
+  "description": "backend supervan test",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^22.10.7",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.3"
+  }
+}
