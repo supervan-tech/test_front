@@ -1,6 +1,6 @@
 # Getting started
 
-## With local install of NodeJS
+## With local NodeJS
 
 ```shell
 npm i
@@ -22,7 +22,7 @@ You should see a screen resembling this one :
 
 ![initial-screen.png](./initial-screen.png)
 
-# Test
+# Test (60 minutes)
 
 1. BUG : Le jour 1 et 2 ne s’affichent pas, corrigez l’affichage des jours du calendrier.
 2. FEAT : Faire défiler les jours à l’aide de deux boutons de part et d’autre du calendrier. On ne peut pas aller dans le passé. À chaque changement de jour, recalculer les prix des 3 jours pour le moment.

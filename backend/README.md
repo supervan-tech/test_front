@@ -23,7 +23,7 @@ You should see a screen resembling this one :
 
 ![initial-screen.png](./doc/seed-screen.png)
 
-# Test
+# Test (15 minutes)
 
 1. BUG : La route /stats ne répond pas, pourquoi ? rendre le serveur à nouveau fonctionnel.
 2. FEAT : Remonter le nombre total de commandes.
