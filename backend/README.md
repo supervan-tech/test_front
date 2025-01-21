@@ -13,7 +13,15 @@ open [localhost:3002](http://localhost:3002)
 
 You should see a screen resembling this one :
 
-![initial-screen.png](./initial-screen.png)
+![initial-screen.png](./doc/initial-screen.png)
+
+## Run the seeding process
+
+open [localhost:3002/seed](http://localhost:3002/seed)
+
+You should see a screen resembling this one :
+
+![initial-screen.png](./doc/seed-screen.png)
 
 # Test
 
