@@ -4,7 +4,7 @@ services:
   frontend:
     image: mcr.microsoft.com/devcontainers/typescript-node:latest
     working_dir: "/frontend"
-    command: "npm run start"
+    command: sh -c "npm i && npm run start"
     restart: always
     volumes:
       - ../frontend:/frontend
@@ -14,7 +14,7 @@ services:
   backend:
     image: mcr.microsoft.com/devcontainers/typescript-node:latest
     working_dir: "/backend"
-    command: "npm run start"
+    command: sh -c "npm i && npm run start"
     restart: always
     volumes:
       - ../backend:/backend
